@@ -307,7 +307,8 @@
 				TargetAttributes = {
 					B9B525E31DD4122E00446D21 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 57AQ433AD9;
+						ProvisioningStyle = Manual;
 					};
 					B9B525FC1DD4122F00446D21 = {
 						CreatedOnToolsVersion = 8.1;
@@ -517,11 +518,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57AQ433AD9;
 				INFOPLIST_FILE = WebViewBenchMark/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dequanzhu.WebViewBenchMark;
+				PRODUCT_BUNDLE_IDENTIFIER = webviewBenchMark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "150b9050-0cc4-4a0a-a1f4-b6b3d500dcd7";
+				PROVISIONING_PROFILE_SPECIFIER = comall;
 			};
 			name = Debug;
 		};
@@ -529,11 +533,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57AQ433AD9;
 				INFOPLIST_FILE = WebViewBenchMark/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dequanzhu.WebViewBenchMark;
+				PRODUCT_BUNDLE_IDENTIFIER = webviewBenchMark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "150b9050-0cc4-4a0a-a1f4-b6b3d500dcd7";
+				PROVISIONING_PROFILE_SPECIFIER = comall;
 			};
 			name = Release;
 		};

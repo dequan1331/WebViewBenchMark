@@ -59,7 +59,6 @@
             NSLog(@"------ begin load new html string------");
             [self resetFinishStatus];
             [self loadOtherHTMLString];
-            [self loadHTMLString];
             break;
         case 4:
             NSLog(@"------ begin new webView and new html string ------");
@@ -70,14 +69,19 @@
         case 5:
             NSLog(@"------ begin load baidu ------");
             [self resetFinishStatus];
-            [self loadqq];
+            [self loadbaidu];
             break;
         case 6:
-            NSLog(@"------ reload baidu ------");
+            NSLog(@"------ load qq ------");
             [self resetFinishStatus];
             [self loadqq];
             break;
         case 7:
+            NSLog(@"------ reload baidu ------");
+            [self resetFinishStatus];
+            [self loadbaidu];
+            break;
+        case 8:
             NSLog(@"------ reload baidu with new webview------");
             [self resetFinishStatus];
             [self buildWebViews];
@@ -134,7 +138,17 @@
 
 -(void)loadqq{
     
-    NSURLRequest *req = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString:@"http://www.apple.com"]];
+    NSURLRequest *req = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString:@"http://www.qq.com"]];
+    
+    _uiTime = CFAbsoluteTimeGetCurrent();
+    [_uiWebView loadRequest:req];
+    
+    _wkTime = CFAbsoluteTimeGetCurrent();
+    [_wkWebView loadRequest:req];
+}
+
+-(void)loadbaidu{
+    NSURLRequest *req = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
     
     _uiTime = CFAbsoluteTimeGetCurrent();
     [_uiWebView loadRequest:req];
